@@ -6,11 +6,12 @@
 </head>
 
 <body>
-    <form id="form" onsubmit="calculateMinCost()">
+    <form id="form" onsubmit="calculateMinCost(event)">
         <label for="rope-lengths">Enter rope lengths:</label>
         <input type="text" id="rope-lengths">
-        <button type="button" onclick="calculateMinCost()">Calculate</button>
-      </form>
+<!--          <button type="button" onclick="calculateMinCost()">Calculate</button> -->
+      <input type='submit'>
+	</form>  
       <div id="result"></div>
 
 <script>
